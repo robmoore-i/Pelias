@@ -1,9 +1,9 @@
 # Pelias
 
-Intended to be JSON parsing for haskell that works and has an API that is straightforward and clean, unlike Aeson whose API I find pretty stupid.
+Intended to be JSON parsing for haskell that works and has an API that is straightforward, unlike Aeson whose API I find overly cumbersome.
 It is my intention that this works as a single file that you can chuck into your project, import and BAM - easy json parsing.
 
-It is very easy to use, but it is slow because I have done no optimisations. It uses the notoriously slow `String` type rather than the much faster `ByteString` and is not mutlithreaded in any way. This is purely on account of my laziness. I had a json related problem (see example) whose solution using Aeson was too shit for me, so I fixed that problem. That's Pelias.
+It is very easy to use, but it is also extremely slow. It uses the notoriously slow `String` type rather than the much faster `ByteString` and is not mutlithreaded in any way. This is purely on account of my laziness. I had a json related problem (see example) whose solution using Aeson was ugly and involved a massive amount of boilerplate, so I solved my problem. That's Pelias.
 
 ## Installing dependencies
 
